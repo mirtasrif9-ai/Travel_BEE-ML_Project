@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #eef7f9, #f4f7fb);
+            color: #4c4c4c;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        .photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            border: 3px solid #077e01;
+            object-fit: cover;
+        }
+        .testimonial {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        .author {
+            font-weight: bold;
+            color: #027002;
+        }
+    </style>
+</head>
+<body>
+    <div align="center"><h1>Happy Customers</h1></div>
+    <div class="container">
+        <div class="card">
+            <img src="images/rownak.jpg" alt="Rownak Ara Choudhury" class="photo">
+            <p class="testimonial">"Tour Guide Bangladesh made my trip absolutely amazing! The recommendations were spot on, and I discovered places I’d never have found on my own. Highly recommend!"</p>
+            <div class="author">Rownak Ara Chowdhury</div>
+        </div>
+
+        <div class="card">
+            <img src="images/nagrul.jpg" alt="Md. Nagrul Islam" class="photo">
+            <p class="testimonial">"As a couple, we found Tour Guide Bangladesh incredibly helpful for planning our honeymoon. The recommendations were romantic and perfectly suited for us. It made our journey unforgettable!"</p>
+            <div class="author">Mr. & Mrs. Nazrul</div>
+        </div>
+
+        <div class="card">
+            <img src="images/khaleda.jpg" alt="Khaleda Ferdousy" class="photo">
+            <p class="testimonial">"Fantastic tool for planning trips in Bangladesh. The user-friendly design and great insights make it a must-have for travelers."</p>
+            <div class="author">Khaleda Ferdousy</div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
